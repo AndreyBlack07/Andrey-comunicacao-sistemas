@@ -10,9 +10,12 @@ a ficha de trabalho**, que contém o enunciado, as tarefas e os testes.
 3. Executar e validar em **Play Mode**; não é necessária uma build.
 4. Consultar a [Ficha de Trabalho — Aula 4](./docs/ficha_aluno.md) para
    os requisitos e a sequência de implementação.
+5. Consultar o [guia de entrega por Pull Request](./docs/guia-entrega-pull-request.md)
+   para preparar o fork na aula e submeter o trabalho durante a semana.
 
-A forma de submissão será comunicada pelo docente. Este guia não pressupõe
-Pull Request; essa modalidade ainda não está definida.
+Cada aluno trabalha num fork próprio. O repositório original é público, mas
+apenas o docente tem permissão de escrita. O fork e o Pull Request também
+serão públicos.
 
 ## Scripts fornecidos
 

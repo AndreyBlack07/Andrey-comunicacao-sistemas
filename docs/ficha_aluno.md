@@ -42,8 +42,11 @@ No final do trabalho deverás conseguir:
   vitória devem usar UI Toolkit; o inimigo reutilizado pode conservar a UI
   legada da aula anterior, que não faz parte desta implementação.
 - Os collectibles usam colliders trigger para poderem ser tocados pelo Capsule Collider do Player sem bloquearem o movimento. O trigger da área de interação também pode detetar o item; impede que entradas sobrepostas contem como recolhas repetidas.
-- A forma de submissão do trabalho será comunicada pelo docente; não assumes
-  que é necessário criar um Pull Request.
+- Durante a aula, prepara o teu fork, clone local e ramo de trabalho. Depois,
+  durante a semana e até à data indicada pelo docente, envia as alterações e
+  abre um Pull Request seguindo o [guia de entrega](./guia-entrega-pull-request.md).
+  O fork e o Pull Request são públicos; não incluas palavras-passe, tokens ou
+  dados pessoais.
 
 ### Checkpoints de trabalho autónomo
 
