@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" style-sheet="GameplayUI.uss" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GameplayUI.uss?fileID=7433441132597879392&amp;guid=70a87ca6be3c64571950231f5cd499f0&amp;type=3#GameplayUI"/>
+    <ui:Label tabindex="-1" text="Health: 100 / 100" parse-escape-sequences="true" display-tooltip-when-elided="true" name="health-label" class="health-display"/>
+    <ui:VisualElement name="game-over-panel" enabled="true" class="game-over-panel">
+        <ui:Label tabindex="-1" text="GAME OVER" parse-escape-sequences="true" display-tooltip-when-elided="true" class="game-over-title"/>
+        <ui:Label tabindex="-1" text="Foste derrotado!" parse-escape-sequences="true" display-tooltip-when-elided="true" class="game-over-subtitle"/>
+    </ui:VisualElement>
+    <ui:Label text="Pontuação: 0" name="score-label"/>
+</ui:UXML>
