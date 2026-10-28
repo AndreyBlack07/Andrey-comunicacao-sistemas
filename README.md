@@ -1,34 +1,30 @@
-# Aula 4 — Projeto de arranque
+# Aula 4 — Solução de referência do professor
 
-Este ficheiro é apenas um guia rápido para abrir o projeto; **não substitui
-a ficha de trabalho**, que contém o enunciado, as tarefas e os testes.
+Esta pasta contém a versão funcional de referência para demonstração e
+validação pelo docente. A versão dos alunos foi distribuída separadamente e
+mantém os esqueletos dos scripts.
 
 ## Começar
 
 1. Abrir este projeto no Unity **6000.3.10f1**.
 2. Abrir `Assets/Scenes/Aula4_ComunicacaoSistemas.unity` (não `SampleScene`).
 3. Executar e validar em **Play Mode**; não é necessária uma build.
-4. Consultar a [Ficha de Trabalho — Aula 4](./docs/ficha_aluno.md) para
-   os requisitos e a sequência de implementação.
-5. Consultar o [guia de entrega por Pull Request](./docs/guia-entrega-pull-request.md)
-   para preparar o fork na aula e submeter o trabalho durante a semana.
+4. Consultar a [Ficha de Trabalho — Aula 4](./docs/ficha_aluno.md) para os
+   requisitos, a sequência de implementação e os testes esperados.
 
-Cada aluno trabalha num fork próprio. O repositório original é público, mas
-apenas o docente tem permissão de escrita. O fork e o Pull Request também
-serão públicos.
+## Soluções incluídas
 
-## Scripts fornecidos
+| Script | Papel |
+| --- | --- |
+| `IInteractable.cs`, `PlayerInteraction.cs` | Contrato de interação e chamada sem dependência de `Collectible`. |
+| `Collectible.cs`, `ScoreSystem.cs` | Recolha, atualização da pontuação e emissão de `ScoreChanged`. |
+| `ScoreDisplay.cs`, `ScoreDoor.cs` | Subscritores independentes para HUD e regra de abertura da porta. |
+| `VictoryScreen.cs` | Exercício extra: apresentação reage ao evento de entrada na porta. |
+| `PlayerMovement.cs`, `Health.cs`, `UIManager.cs` | Movimento e HUD de vida já funcionais. |
+| `Aula3EnemyMovement.cs`, `DamageZone.cs` | Inimigo reutilizado da aula anterior, mantido como exemplo. |
 
-| Script                                           | Estado               | Papel no exercício                                                               |
-| ------------------------------------------------ | -------------------- | -------------------------------------------------------------------------------- |
-| `IInteractable.cs`                               | Completo             | Contrato de interação.                                                           |
-| `PlayerInteraction.cs`                           | Completo             | Deteta triggers e chama o contrato.                                              |
-| `Collectible.cs`                                 | Esqueleto compilável | Completar recolha e pedido de pontos.                                            |
-| `ScoreSystem.cs`                                 | Esqueleto compilável | Completar pontuação e emissão de `ScoreChanged`.                                 |
-| `ScoreDisplay.cs`                                | Esqueleto compilável | Completar subscrição e atualização da UI Toolkit.                                |
-| `ScoreDoor.cs`                                   | Esqueleto compilável | Completar abertura ao limiar; a notificação de entrada é o exercício extra.      |
-| `PlayerMovement.cs`, `Health.cs`, `UIManager.cs` | Apoio funcional      | Movimento e HUD existente.                                                       |
-| `Aula3EnemyMovement.cs`, `DamageZone.cs`         | Reutilizados         | Inimigo da aula anterior, mantido intencionalmente como exemplo de reutilização. |
+O Singleton e a Event Queue permanecem como comparação/aprofundamento
+conceptual; não fazem parte da implementação principal da ficha.
 
 Os colliders dos collectibles são triggers para que o Player os possa tocar
 sem ficar bloqueado. A área de interação também é trigger; evita contabilizar
